@@ -1,14 +1,14 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 
 import image from '../image.jpg'
 import '../App.css'
-import { ShowContext } from '../ContextAPI/context'
+
 
 
 const Home = () => {
   const [movies, setMovies] = useState([]);
-  // const {setSelectedShow} = useContext(ShowContext);
+  
 
   useEffect(()=>{
     async function fetchShows() {
@@ -24,9 +24,8 @@ const Home = () => {
     fetchShows();
   }, []);
 
-  // console.log(movies);
   const handleShowSummary = (show) => {
-    // console.log('Selected show:', show);
+   
     localStorage.setItem('selectedShow', JSON.stringify(show));
   };
 

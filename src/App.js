@@ -3,8 +3,6 @@ import './App.css';
 import Home from './components/Home';
 import Summary from './components/Summary';
 import BookingForm from './components/BookingForm';
-import { ShowProvider } from './ContextAPI/context';
-
 
 function App() {
   return (
