@@ -30,7 +30,7 @@ const BookingForm = () =>{
   return (
     
     <main className='summary-card'>
-      {bookingMessage ? <div></div><p>{bookingMessage}</p> <Link to ="/">
+      {bookingMessage ? <div><p>{bookingMessage}</p> <Link to ="/">
           <button style={{float: 'right', marginTop:'20px'}}>Go Home</button>
         </Link> </div> : <>
       <h1>Book Movie Ticket</h1>
